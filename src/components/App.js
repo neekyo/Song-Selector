@@ -4,16 +4,19 @@ import SongDetail from './SongDetail';
 
 const App = () => {
 	return (
-		<div className="ui container grid">
-			<div className="ui row">
-				<div className="column eight wide list">
-					<SongList />
-				</div>
-				<div className="column eight wide list">
-					<SongDetail />
+		<React.Fragment>
+			<div className="ui container grid">
+				<h1 id="header">Playlist</h1>
+				<div className="ui row">
+					<div className="column eight wide list">
+						<SongList />
+					</div>
+					<div className="column eight wide list">
+						<SongDetail />
+					</div>
 				</div>
 			</div>
-		</div>
+		</React.Fragment>
 	);
 };
 

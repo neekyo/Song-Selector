@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 
 const SongDetail = ({ song }) => {
 	if (!song) {
-		return <div>Select a song</div>;
+		return <em>Select a song!</em>;
 	}
 
 	return (
 		<div className="list">
-			<h3>Details for:</h3>
+			<h3>Details:</h3>
 			<p>
 				<b>Title:</b> {song.title}
 				<br />
